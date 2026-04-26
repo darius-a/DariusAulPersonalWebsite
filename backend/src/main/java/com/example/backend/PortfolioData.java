@@ -60,7 +60,7 @@ public class PortfolioData {
             "04",
             "ethics.jpg",
             "ETHICS BOWL",
-            "Led my school's team to an undefeated performance at the UofT regional qualifiers in Grade 11. The Ethics Bowl rewards genuine reasoning — participants argue their actual position, evaluated on quality of thinking rather than persuasion.",
+            "Led my school's team to an undefeated performance at the UofT regional qualifiers in Grade 11. The Ethics Bowl tests your reasoning skills: participants argue their actual position, and are evaluated on quality of thinking rather than how persuasive they are.",
             List.of("Undefeated — UofT Regional Qualifiers")
         )
     );
@@ -128,17 +128,17 @@ public class PortfolioData {
         new Hobby(
             "piano.jpg",
             "PIANO",
-            "Twelve years of classical training. Completed RCM Level 9 with First Class Honours (85%) and currently preparing for Level 10. Beyond the curriculum: self-taught blues and jazz improvisation."
+            "Twelve years of classical training. Completed RCM Level 9 with First Class Honours (85%) and currently working on RCM Level 10. Outside of RCM, i've self-taught blues and jazz improvisation."
         ),
         new Hobby(
             "swimming.jpg",
             "SWIMMING",
-            "Certified National Lifeguard (Pool) and Swim Instructor through the Lifesaving Society of Canada. Also hold Standard First Aid with CPR-C. Have been lifeguarding since Grade 10."
+            "National Lifeguard (Pool) Certified and Swim Instructor Certified through the Lifesaving Society of Canada. Also hold Standard First Aid with CPR-C. Previously having done competitive swimming, I currently hold a swim instructor role."
         ),
         new Hobby(
             "reading.jpg",
             "READING",
-            "Primarily non-fiction — entrepreneurship, philosophy, and history. Currently working through the Disciplined Entrepreneurship curriculum alongside running the school's entrepreneurship programming."
+            "Reading list - coming soon"
         )
     );
 }

@@ -14,7 +14,7 @@ public class BackendApplication {
 		SpringApplication.run(BackendApplication.class, args);
 	}
 	
-	@GetMapping("/hello")
+	@GetMapping("/hello") //test url for hello
 	@CrossOrigin(origins = "*")
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
       return String.format("Hello %s!", name);
