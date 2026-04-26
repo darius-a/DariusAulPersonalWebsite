@@ -1,9 +1,13 @@
 package com.example.backend;
-
+ 
 import java.util.List;
-
+ 
+// this class below holds all static portfolio data used by the backend
 public class PortfolioData {
-
+ 
+    // records are a concise data class where java auto-generates constructors and getters
+ 
+    // every single single "project" card will contain the following info: number, image filename, title, description, list of awards
     public record Project(
         String num,
         String img,
@@ -11,7 +15,8 @@ public class PortfolioData {
         String desc,
         List<String> awards
     ) {}
-
+ 
+    // every single single "experience" card will contain the following info: title, organization, date, bullet point description, and "tags" (similar to linkedin skills)
     public record Experience(
         String title,
         String org,
@@ -19,20 +24,22 @@ public class PortfolioData {
         List<String> bullets,
         List<String> tags
     ) {}
-
+ 
+    // every single hobby card contains: image filename, title, description
     public record Hobby(
         String img,
         String title,
         String desc
     ) {}
-
+ 
+    
     public static final List<Project> PROJECTS = List.of(
         new Project(
             "01",
             "ecosentry.jpg",
             "ECOSENTRY",
             "Co-founded a startup developing solar-powered acoustic sensors with a TensorFlow audio classifier to detect poaching in wildlife reserves. Built the model, prototyped field hardware via CNC routing and 3D printing, and led outreach to 10+ African wildlife parks.",
-            List.of(
+            List.of(                                  // List.of() creates a fixed list
                 "Toronto Science Fair — Silver Medal",
                 "1517 Fund Medici Grant — $1,000 USD",
                 "$5,000 CAD Prototyping Award",
@@ -64,7 +71,7 @@ public class PortfolioData {
             List.of("Undefeated — UofT Regional Qualifiers")
         )
     );
-
+ 
     public static final List<Experience> EXPERIENCE = List.of(
         new Experience(
             "CO-FOUNDER",
@@ -72,10 +79,10 @@ public class PortfolioData {
             "Nov 2023 — Dec 2025",
             List.of(
                 "Built a TensorFlow CNN audio classifier to distinguish threat sounds from ambient noise, with a multilateration module for real-time location approximation",
-                "Pitched at four competitions, securing $6,000+ in funding; coordinated with incubators to advance prototyping",
+                "Pitched at four competitions, securing $6,000+ in funding; coordinated with incubators to fund prototyping",
                 "Prototyped solar-powered field hardware using CNC routing and 3D printing",
                 "Conducted outreach to 10+ major African wildlife parks including executives at the world's largest rhino sanctuary",
-                "Received mentorship from Prof. Rob Maher (audio forensics, Montana State) and a Paul Allen Institute for AI executive"
+                "Received mentorship from Prof. Rob Maher (expert in audio forensics, Montana State) and a Paul Allen Institute for AI executive"
             ),
             List.of("TensorFlow", "Python", "Audio ML", "Hardware", "Fundraising")
         ),
@@ -123,7 +130,7 @@ public class PortfolioData {
             List.of("Mathematics", "Teaching")
         )
     );
-
+ 
     public static final List<Hobby> HOBBIES = List.of(
         new Hobby(
             "piano.jpg",
